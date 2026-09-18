@@ -40,6 +40,18 @@ required. Verify the hardware and build settings if using another revision.
 The existing A/B wiring stays on the same board. If testing on another gateway,
 disconnect the old Modbus master first. Only one master should drive this bus.
 
+### Optima 251 wiring
+
+Connect Optima 251 terminal **23** to the Waveshare **DC+** input and terminal
+**24** to **DC−**. For Modbus RS-485, connect **C2** to **B−** and **C3** to
+**A+**.
+
+![Optima 251 to Waveshare ESP32-S3-RS485-CAN wiring](docs/optima-251-waveshare-wiring.png)
+
+The diagram is schematic: follow the terminal markings rather than relying on
+wire colors or the illustrated spacing. Disconnect power and verify voltage and
+polarity before energizing the gateway.
+
 ## Setup
 
 1. Download or clone this repository, then copy its YAML and secrets example
